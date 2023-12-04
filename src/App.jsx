@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Counter from "./Counter";
+import Users from "./Users";
 
 
 
@@ -7,16 +8,12 @@ function App() {
     const [isShown, setIsShown] = useState(true)
 
     return (
-        <div>
-            <button
-                onClick={() => {
-                    setIsShown(!isShown)
-                }}
-            >show/hide counter</button>
+        <>
+            <button onClick={() => setIsShown(!isShown)}>show hide </button>
             {
-                isShown && <Counter />
+                isShown && <Users />
             }
-        </div>
+        </>
     )
 }
 export default App;
