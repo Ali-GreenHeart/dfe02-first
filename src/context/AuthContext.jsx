@@ -6,6 +6,7 @@ export const AuthContext = createContext({})
 
 const AuthContextProvider = ({ children }) => {
     const [data, setData] = useState({})
+
     useEffect(() => {
         axios.get('https://jsonplaceholder.typicode.com/users/2')
             .then((resp) => {
