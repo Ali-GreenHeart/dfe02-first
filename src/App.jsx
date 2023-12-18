@@ -1,10 +1,10 @@
-import Users from "./pages/Users"
+import Memoization from "./pages/Memoization";
 
 function App() {
 
     return (
         <>
-            <Users />
+            <Memoization />
         </>
     )
 }
